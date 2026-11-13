@@ -1,0 +1,579 @@
+Using launch settings from C:\Users\admin\OneDrive\Desktop\SingleProject\FixNear\Properties\launchSettings.json...
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Categories] AS [c]) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[Phone], [u].[Role]
+      FROM [Users] AS [u]
+      WHERE [u].[Role] = N'Customer'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryId], [c].[Description], [c].[IsActive], [c].[Name]
+      FROM [Categories] AS [c]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (23ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__def_Business_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[BusinessName] = @__def_Business_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__provider_ProviderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Reviews] AS [r]
+              WHERE [r].[ProviderId] = @__provider_ProviderId_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5232
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\admin\OneDrive\Desktop\SingleProject\FixNear
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[ProviderServiceId], [t].[BasePrice], [t].[CategoryId], [t].[Description], [t].[IsActive], [t].[ProviderId], [t].[ServiceName], [t].[CategoryId0], [t].[Description0], [t].[IsActive0], [t].[Name], [p].[ProviderId]
+      FROM [Providers] AS [p]
+      INNER JOIN (
+          SELECT [p0].[ProviderServiceId], [p0].[BasePrice], [p0].[CategoryId], [p0].[Description], [p0].[IsActive], [p0].[ProviderId], [p0].[ServiceName], [c].[CategoryId] AS [CategoryId0], [c].[Description] AS [Description0], [c].[IsActive] AS [IsActive0], [c].[Name]
+          FROM [ProviderService] AS [p0]
+          INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[CategoryId]
+      ) AS [t] ON [p].[ProviderId] = [t].[ProviderId]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ReviewId], [r].[BookingId], [r].[Comment], [r].[CreatedAt], [r].[CustomerId], [r].[ProviderId], [r].[Rating], [p].[ProviderId]
+      FROM [Providers] AS [p]
+      INNER JOIN [Reviews] AS [r] ON [p].[ProviderId] = [r].[ProviderId]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__normalized_0='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[Phone], [u].[Role]
+      FROM [Users] AS [u]
+      WHERE [u].[Email] = @__normalized_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[ProviderServiceId], [t].[BasePrice], [t].[CategoryId], [t].[Description], [t].[IsActive], [t].[ProviderId], [t].[ServiceName], [t].[CategoryId0], [t].[Description0], [t].[IsActive0], [t].[Name], [p].[ProviderId]
+      FROM [Providers] AS [p]
+      INNER JOIN (
+          SELECT [p0].[ProviderServiceId], [p0].[BasePrice], [p0].[CategoryId], [p0].[Description], [p0].[IsActive], [p0].[ProviderId], [p0].[ServiceName], [c].[CategoryId] AS [CategoryId0], [c].[Description] AS [Description0], [c].[IsActive] AS [IsActive0], [c].[Name]
+          FROM [ProviderService] AS [p0]
+          INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[CategoryId]
+      ) AS [t] ON [p].[ProviderId] = [t].[ProviderId]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ReviewId], [r].[BookingId], [r].[Comment], [r].[CreatedAt], [r].[CustomerId], [r].[ProviderId], [r].[Rating], [p].[ProviderId]
+      FROM [Providers] AS [p]
+      INNER JOIN [Reviews] AS [r] ON [p].[ProviderId] = [r].[ProviderId]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryId], [c].[Description], [c].[IsActive], [c].[Name]
+      FROM [Categories] AS [c]
+      WHERE [c].[IsActive] = CAST(1 AS bit)
+      ORDER BY [c].[CategoryId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[ProviderId]
+      FROM [Favorites] AS [f]
+      WHERE [f].[UserId] = @__userId_0
+      ORDER BY [f].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Providers] AS [p]
+              WHERE [p].[ProviderId] = @__id_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: FixNear.Middleware.ExceptionMiddleware[0]
+      BadRequestException: Cloudinary upload failed: Invalid image file
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Providers] AS [p]
+              WHERE [p].[ProviderId] = @__id_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: FixNear.Middleware.ExceptionMiddleware[0]
+      BadRequestException: Cloudinary upload failed: Invalid image file
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Providers] AS [p]
+              WHERE [p].[ProviderId] = @__id_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__providerId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[ProviderId] = @__providerId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      UPDATE [Providers] SET [Image] = @p0
+      OUTPUT 1
+      WHERE [ProviderId] = @p1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryId], [c].[Description], [c].[IsActive], [c].[Name]
+      FROM [Categories] AS [c]
+      WHERE [c].[IsActive] = CAST(1 AS bit)
+      ORDER BY [c].[CategoryId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[ProviderId]
+      FROM [Favorites] AS [f]
+      WHERE [f].[UserId] = @__userId_0
+      ORDER BY [f].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[ProviderServiceId], [t].[BasePrice], [t].[CategoryId], [t].[Description], [t].[IsActive], [t].[ProviderId], [t].[ServiceName], [t].[CategoryId0], [t].[Description0], [t].[IsActive0], [t].[Name], [p].[ProviderId]
+      FROM [Providers] AS [p]
+      INNER JOIN (
+          SELECT [p0].[ProviderServiceId], [p0].[BasePrice], [p0].[CategoryId], [p0].[Description], [p0].[IsActive], [p0].[ProviderId], [p0].[ServiceName], [c].[CategoryId] AS [CategoryId0], [c].[Description] AS [Description0], [c].[IsActive] AS [IsActive0], [c].[Name]
+          FROM [ProviderService] AS [p0]
+          INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[CategoryId]
+      ) AS [t] ON [p].[ProviderId] = [t].[ProviderId]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ReviewId], [r].[BookingId], [r].[Comment], [r].[CreatedAt], [r].[CustomerId], [r].[ProviderId], [r].[Rating], [p].[ProviderId]
+      FROM [Providers] AS [p]
+      INNER JOIN [Reviews] AS [r] ON [p].[ProviderId] = [r].[ProviderId]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Providers] AS [p]
+              WHERE [p].[ProviderId] = @__id_0) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__providerId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      WHERE [p].[ProviderId] = @__providerId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      UPDATE [Providers] SET [Image] = @p0
+      OUTPUT 1
+      WHERE [ProviderId] = @p1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ProviderId], [p].[Address], [p].[Available], [p].[BusinessName], [p].[Description], [p].[Experience], [p].[Image], [p].[IsVerified], [p].[ServiceArea], [p].[UserId]
+      FROM [Providers] AS [p]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryId], [c].[Description], [c].[IsActive], [c].[Name]
+      FROM [Categories] AS [c]
+      WHERE [c].[IsActive] = CAST(1 AS bit)
+      ORDER BY [c].[CategoryId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[ProviderId]
+      FROM [Favorites] AS [f]
+      WHERE [f].[UserId] = @__userId_0
+      ORDER BY [f].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[ProviderServiceId], [t].[BasePrice], [t].[CategoryId], [t].[Description], [t].[IsActive], [t].[ProviderId], [t].[ServiceName], [t].[CategoryId0], [t].[Description0], [t].[IsActive0], [t].[Name], [p].[ProviderId]
+      FROM [Providers] AS [p]
+      INNER JOIN (
+          SELECT [p0].[ProviderServiceId], [p0].[BasePrice], [p0].[CategoryId], [p0].[Description], [p0].[IsActive], [p0].[ProviderId], [p0].[ServiceName], [c].[CategoryId] AS [CategoryId0], [c].[Description] AS [Description0], [c].[IsActive] AS [IsActive0], [c].[Name]
+          FROM [ProviderService] AS [p0]
+          INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[CategoryId]
+      ) AS [t] ON [p].[ProviderId] = [t].[ProviderId]
+      ORDER BY [p].[ProviderId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ReviewId], [r].[BookingId], [r].[Comment], [r].[CreatedAt], [r].[CustomerId], [r].[ProviderId], [r].[Rating], [p].[ProviderId]
+      FROM [Providers] AS [p]
+      INNER JOIN [Reviews] AS [r] ON [p].[ProviderId] = [r].[ProviderId]
+      ORDER BY [p].[ProviderId]

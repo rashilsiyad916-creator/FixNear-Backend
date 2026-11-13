@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="FixNear.Application/FixNear.Application.csproj" />
+  <Project Path="FixNear.Domain/FixNear.Domain.csproj" />
+  <Project Path="FixNear.Infrastructure/FixNear.Infrastructure.csproj" />
+  <Project Path="FixNear/FixNear.csproj" />
+</Solution>

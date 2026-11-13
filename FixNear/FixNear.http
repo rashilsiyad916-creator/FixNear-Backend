@@ -1,0 +1,62 @@
+@FixNear_HostAddress = http://localhost:5232
+@token = paste-jwt-token-here
+
+### Get categories
+GET {{FixNear_HostAddress}}/api/Categories
+Accept: application/json
+
+### Get providers (optional filters: ?category=Plumber&area=Tirur)
+GET {{FixNear_HostAddress}}/api/Providers
+Accept: application/json
+
+### Get provider by id
+GET {{FixNear_HostAddress}}/api/Providers/1
+Accept: application/json
+
+### Get provider reviews
+GET {{FixNear_HostAddress}}/api/Providers/1/reviews
+Accept: application/json
+
+### Register
+POST {{FixNear_HostAddress}}/api/Auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Test User",
+  "email": "test2@example.com",
+  "phone": "9876543210",
+  "password": "Password123!",
+  "role": "Customer"
+}
+
+### Login
+POST {{FixNear_HostAddress}}/api/Auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "Password123!"
+}
+
+### My bookings (requires token)
+GET {{FixNear_HostAddress}}/api/Bookings
+Authorization: Bearer {{token}}
+Accept: application/json
+
+### Create booking (requires token)
+POST {{FixNear_HostAddress}}/api/Bookings
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "providerId": 1,
+  "date": "2026-11-01",
+  "address": "My Home, Tirur",
+  "problem": "Fan not working"
+}
+
+### Cancel booking (requires token)
+PUT {{FixNear_HostAddress}}/api/Bookings/1/cancel
+Authorization: Bearer {{token}}
+
+###
